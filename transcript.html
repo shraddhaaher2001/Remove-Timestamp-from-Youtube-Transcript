@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+            
+        }
+        .container{
+            height: 10%;
+            width: 100%;
+            background-image: linear-gradient(#f190ba,rgb(61, 190, 241),rgb(160, 240, 240));
+            
+        }
+        h1{
+            display: flex;
+    
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #box1{
+            display: flex;
+            flex-direction: column;           
+            margin: 20px 20px;
+        }
+        #box2{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px;
+        }
+        #btn1,#btn2{
+            margin: 10px 200px;
+            padding: 5px 10px;
+            height: 30px;
+            width: 100px;
+            /* border: 2px solid black; */
+            background-color: rgb(229, 174, 193);
+            font-size: large;
+        }
+        #btn1,#btn2:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .text{
+            padding: 20px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Transcript Timestamp Remover</h1> 
+    <div class="box">
+        <div id="box1">
+            <textarea class="text" name="" id="text1" cols="70" rows="30"></textarea>
+            <button id="btn1" type="button">Submit</button>
+        </div>
+        <div id="box2">
+            <textarea class="text" name="" id="text2" cols="70" rows="30"></textarea>
+            <button id="btn2" type="button">Copy</button>
+        </div>
+    </div>
+</div>
+    <script src="transcript.js"></script>
+</body>
+</html>
